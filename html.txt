@@ -1,0 +1,166 @@
+#1 
+웹페이지를 만드는 건 HTML
+에디터가 다 달라서 아톰으로 이용
+
+
+주소창에 주소입력하는건 내컴터가 아닌 저 주소에 해당하는 다른 컴퓨터에 저장된 주소를 읽고 싶을때
+
+우리는 웹페이지랑 같은거 ctrl+o
+web
+1.
+클릭하고
+hello web
+저장하기
+새로고침
+
+#강조하기! 진하게, 밑줄로
+진하게쓰기  <strong>방극부</strong> 밑줄로 더 강조하는 법underline <strong>방<u>극</u>부</strong>
+tag -> strong, u
+tag를 통해서 강조함을 나타낸다.
+
+#2
+w3c : 웹을 만드는 곳
+페이지 소스
+
+<h1>W3C</h1>
+h1은 tag 
+
+https://www.w3schools.com/ <-h1 검색해보기
+구글링도 가능 
+
+글을 읽는건 안좋을 수 있다. 
+<h1 style="text-align:center">This is heading 1</h1>
+<h2 style="text-align:left">This is heading 2</h2>
+<h3 style="text-align:right">This is heading 3</h3>
+<h4 style="text-align:justify">This is heading 4</h4> 붙여넣기 해보자 그리고 추론 생각 다음에 글보기
+
+줄바꿈 크기가 작아짐 등등
+h1-h6 제목을 나타내는 태그
+
+#3
+현재 150개 이상의 태그가 존재함 
+전세계에있는웹들은 평균 25-30개의 태그를 가지고 있다. 
+
+#4
+br vs p
+코드에게 줄바꿈해도 웹페이지에는 반영되지않음 줄바꿈하는 방법 <br>
+<br>
+단락이기 때문에 두 번쓰면 단락처럼 느껴짐 여백이 생김 
+
+h1은 열리는 태그와 닫히는 태그가 존재했지만 br은 감쌀 필요가 없기에 닫지 않는다.
+단락을 표현할때 쓰라고 특정한 태그 만들어놈 <p>
+
+<p>는 열리는 태그와 닫히는 태그가 존재함 
+<p>초절정 미남 <strong>방<u>극</u>부</strong>와 절세미녀 이성숙의 결혼!!</p>
+<p>는 정보로서 더 가치있게 쓰이기에 여기선 <p>가 더 적절하다
+
+차이점
+<br>은 줄바꿈 여러번 가능. <p>는 정해진 여백만큼이 벌어져있다. 
+(css) style="margin-top:40px;"이렇게 쓰면 여백과 여백이 40px만큼 떨어진다. 정교하게 떨어뜨릴 수 있다.
+
+검색엔진에게 노출되어야함. 
+
+#5 
+사진 넣는법 <img>: 이미지 추가 
+태그의 이름만으로는 정보가 부족하다.  web에 사진 붙여넣기 그리고 사진이름을 다시 설정하거나 이미지 주소를 복사해서 ""안에 넣으면 된다. 
+<img src="주소">
+예시) <img src="congratulation.jpg">
+크기가 너무 크면 
+<img src="congratulation.jpg" width="450">
+src, width는 속성(attribute)이고 위치는 두개가 바뀌어도 상관없다. 
+즉, <img width="450"  src="congratulation.jpg" > 이것도 가능!
+
+#6
+<parent> 
+      <child><\child>
+<\parent>
+
+이렇게 태그가 포함관계로 연결되어 있을 때 
+포함하고 있는 태그르 부모태그 포함된 태그르 자식태그라고함. 
+
+어떤태그는 항상 붙어다니는 태그가 있다. 이것에 대해 배울 것이다.
+오늘 목차도 살펴볼것이다. 
+
+목차 list <li>
+
+꿀팁) ctrl+클릭하면 한번에  여러개쓸 수 있음 
+
+<li>1.HTML</li>
+<li>2.CSS</li>
+<li>3.JavaScript</li><br>
+
+
+<li>oqijf</li>
+<li>qjojef</li>
+<li>qjofij</li>
+<li>eqjoef</li>
+
+
+위에는 순서고 밑에는 막쓴거 구분해주는 태그는 <ul>
+
+<ul>
+<li>1.HTML</li>
+<li>2.CSS</li>
+<li>3.JavaScript</li>
+</ul>
+<ul>unoredered list 
+  <li>oqijf</li>
+  <li>qjojef</li>
+  <li>qjofij</li>
+  <li>eqjoef</li>
+</ul>
+
+<li> 태그는 분명이 부모태그를 가지고있다.
+부모태그인 <ul>태그는 분명히 자식 태그를 가지고 있다. 
+
+<ol>은 숫자 붙여주는거 ordered list
+<ol>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+</ol>
+
+<table>은 삼대가 같이다님 <갤러리>
+
+#7 
+웹페이지의 제목을 바꿀 수 있는 <title>
+<title> WEB1 - html</title>
+
+만약 한글이 깨져서 나올때는 우리의 에디터가 utf-8이니까 utf-8로 열게 만들기 title 밑에 써주기 
+<meta charset="utf-8">
+
+본문은 <body>로 묶어야함. 본문(<body>)을 설명하는 태그는 <head> ~~</head> 
+<head>와 <body>를 묶는 <html>그리고 <html>위에는 <!doctype html>
+
+내가 방문하는 웹사이트에서 우클릭후 페이지소스보기 하면 페이지 소스들이나옴 
+
+#8
+hypertext
+<a> 정보의 바다의 닻과 같은 존재 링크!
+링크는 본드, 풀과 같다. 하나의 책을 만들기 위해 꼭 필요한 부분
+
+w3c는 미래의 웹이 어떠해야 하는지를 결정함 
+<a href="https://www.w3.org/TR/2011/WD-html5-20110405/text-level-semantics.html#the-a-element">초절정 미남</a>
+
+만약 클릭했을 때 새 탭이 열리게 하고 싶으면 
+<a href="(주소)https://www.w3.org/TR/2011/WD-html5-20110405/text-level-semantics.html#the-a-element" (새텝)target="_blank">초절정 미남
+
+마우스 올렸을 때 무엇인지 알려주고 싶을때 
+<a href="https://www.w3.org/TR/2011/WD-html5-20110405/text-level-semantics.html#the-a-element"
+target="_blank" (링크에 마우스 올렸을때 제목)title="html5 specification">초절정 미남
+
+#9 링크
+제일 위에 제목 거기를 클릭하면 index. html로 갈것이고 
+목차에도 모두 링크를 걸어서 클릭하면 이동할 수 있도록 
+
+우클릭 duplicate로 index.html 등등의 링크를만든다.
+
+#9 원시웹
+internet과 web은 다르다.
+internet이 도시라면 web은 건물 하나이다.
+
+internet은 중앙이 없어서 수많은 통신장치가 분산되어있다. 
+
+http://info.cern.ch/ 웹의 메소포타미아
+
+#10 인터넷을 여는 열쇠:서버와 클라이언트
